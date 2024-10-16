@@ -19,8 +19,11 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- nav -->
     <div>
-      <nav class="background-black site-header__wrapper">
+      <nav
+        class="background-black site-header__wrapper layout-flex-Jcontent-center layout-flex-align-center"
+      >
         <svg
           aria-label="NM logo"
           xmlns="http://www.w3.org/2000/svg"
@@ -36,10 +39,16 @@
         </svg>
       </nav>
     </div>
-    <h1 class="font-weight-bold margin-top-medium padding-large">
+    <!-- heading -->
+    <h1
+      class="font-weight-bold margin-top-mid layout-flex-align-center layout-flex-Jcontent-center"
+    >
       NV Interview Test Page
     </h1>
-    <div class="padding-small">
+    <!-- swiper cntainer -->
+    <div
+      class="layout-flex-align-center NVSwiper layout-flex-Jcontent-center margin-top-mid"
+    >
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -118,9 +127,13 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
+        
       </div>
-      <!-- Add a container for the captions -->
-      <div id="caption" class="margin-top-small padding-small"></div>
+      <!-- captions -->
+      <div
+        id="caption"
+        class="text-copy font-serif margin-top-basic caption"
+      ></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

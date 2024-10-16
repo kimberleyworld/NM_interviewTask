@@ -23,6 +23,10 @@ const captions = [
 
 // Initialize Swiper
 const swiper = new Swiper(".mySwiper", {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -32,7 +36,7 @@ const swiper = new Swiper(".mySwiper", {
     clickable: true,
     // Custom pagination with numbers instead of dots
     renderBullet: function (index, className) {
-      return `<span class="${className}">${index + 1}</span>`; // Use index + 1 to display numbers
+      return `<span class="${className}">${index + 1}</span>`;
     },
   },
   on: {
