@@ -24,7 +24,7 @@ const captions = [
 // Initialize Swiper
 const swiper = new Swiper(".mySwiper", {
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: true,
   },
   navigation: {

@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- nav -->
-    <div>
+    <!-- Header with Navigation -->
+    <header>
       <nav
         class="background-black site-header__wrapper layout-flex-Jcontent-center layout-flex-align-center"
       >
@@ -38,105 +38,96 @@
           ></path>
         </svg>
       </nav>
-    </div>
-    <!-- heading -->
-    <h1
-      class="font-weight-bold margin-top-mid layout-flex-align-center layout-flex-Jcontent-center"
-    >
-      NV Interview Test Page
-    </h1>
-    <!-- swiper cntainer -->
-    <div
-      class="layout-flex-align-center NVSwiper layout-flex-Jcontent-center margin-top-mid"
-    >
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              src="images/TUL24003_004.jpg"
-              alt="Image 1"
-              class="gallery-item"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/TUL24003_009.jpg"
-              alt="Image 1"
-              class="gallery-item"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/TUL24003_013.jpg"
-              alt="Image 1"
-              class="gallery-item"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/TUL24003_020.jpg"
-              alt="Image 1"
-              class="gallery-item"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/TUL24003_023.jpg"
-              alt="Image 1"
-              class="gallery-item"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/TUL24003_038.jpg"
-              alt="Image 1"
-              class="gallery-item"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/TUL24003_043.jpg"
-              alt="Image 1"
-              class="gallery-item"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/TUL24003_061.jpg"
-              alt="Image 1"
-              class="gallery-item"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/TUL24003_069.jpg"
-              alt="Image 1"
-              class="gallery-item"
-            />
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="layout-flex-align-center layout-flex-Jcontent-center">
+        <h1
+          class="font-weight-bold margin-top-mid ui-border-bottom padding-bottom-small heading"
+        >
+          NV Interview Test Page
+        </h1>
+      </div>
+
+      <!-- Swiper Container -->
+      <div
+        class="NVSwiper layout-flex-align-center layout-flex-Jcontent-center margin-top-small"
+      >
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="images/TUL24003_004.jpg"
+                alt="Green house with outline of two figures in the background"
+                class="gallery-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/TUL24003_009.jpg"
+                alt="Woman wearing cream hijab stroking a grey horse."
+                class="gallery-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/TUL24003_013.jpg"
+                alt="Two women and a young boy gathered in kitchen"
+                class="gallery-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/TUL24003_020.jpg"
+                alt="Two Israeli soldiers holding guns look across field"
+                class="gallery-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/TUL24003_023.jpg"
+                alt="woman opens glass sliding door"
+                class="gallery-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/TUL24003_038.jpg" alt="" class="gallery-item" />
+              <!-- Placeholder for future alt text -->
+            </div>
+            <div class="swiper-slide">
+              <img src="images/TUL24003_043.jpg" alt="" class="gallery-item" />
+              <!-- Placeholder for future alt text -->
+            </div>
+            <div class="swiper-slide">
+              <img src="images/TUL24003_061.jpg" alt="" class="gallery-item" />
+              <!-- Placeholder for future alt text -->
+            </div>
+            <div class="swiper-slide">
+              <img src="images/TUL24003_069.jpg" alt="" class="gallery-item" />
+              <!-- Placeholder for future alt text -->
+            </div>
+            <div class="swiper-slide">
+              <img src="images/TUL24003_081.jpg" alt="" class="gallery-item" />
+              <!-- Placeholder for future alt text -->
+            </div>
           </div>
 
-          <div class="swiper-slide">
-            <img
-              src="images/TUL24003_081.jpg"
-              alt="Image 1"
-              class="gallery-item"
-            />
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-        
+        <!-- Captions -->
+        <div
+          id="caption"
+          class="margin-top-small text-copy font-serif caption ui-border-top padding-top-small"
+        ></div>
       </div>
-      <!-- captions -->
-      <div
-        id="caption"
-        class="text-copy font-serif margin-top-basic caption"
-      ></div>
-    </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <!-- Use defer for better performance -->
   </body>
 </html>
