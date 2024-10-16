@@ -2,26 +2,132 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <title>Novara Media Gallery</title>
     <link
       rel="stylesheet"
       type="text/css"
       href="https://novaramedia.com/wp-content/themes/novaramedia-com/dist/main.css?ver=4.2.1"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="background-gray margin-large margin-top-large">
+  <body>
+    <!-- Header with Navigation -->
     <header>
-      <h1 class="font-color-blue-neon">Image Gallery</h1>
+      <nav
+        class="background-black site-header__wrapper layout-flex-Jcontent-center layout-flex-align-center"
+      >
+        <svg
+          aria-label="NM logo"
+          xmlns="http://www.w3.org/2000/svg"
+          width="34"
+          height="30"
+          viewBox="13.773 104.019 972.454 791.961"
+          xml:space="preserve"
+        >
+          <path
+            fill="#FFF"
+            d="M595.768 104.019H404.231v310.664L217.829 104.019H35.875v633.568H227.42v-274.6l187.23 274.601h170.702l187.23-274.6v274.6h191.545V104.019H782.18L595.768 414.685V104.019m-412.55 215.669v373.695H80.078v-545.16h112.729l255.626 426.05v-426.05h103.133v545.16h-113.55L183.218 319.688zM986.227 895.98H13.773v-88.406h972.454z"
+          ></path>
+        </svg>
+      </nav>
     </header>
-    <main class="gallery-container">
-      <div class="gallery">
-        <img src="image1.jpg" alt="Image 1" class="gallery-item" />
-        <img src="image2.jpg" alt="Image 2" class="gallery-item" />
-        <img src="image3.jpg" alt="Image 3" class="gallery-item" />
+
+    <!-- Main Content -->
+    <main>
+      <div class="layout-flex-align-center layout-flex-Jcontent-center">
+        <h1
+          class="font-weight-bold margin-top-mid ui-border-bottom padding-bottom-small heading"
+        >
+          NV Interview Test Page
+        </h1>
+      </div>
+
+      <!-- Swiper Container -->
+      <div
+        class="NVSwiper layout-flex-align-center layout-flex-Jcontent-center margin-top-small"
+      >
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="images/TUL24003_004.jpg"
+                alt="Green house with outline of two figures in the background"
+                class="gallery-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/TUL24003_009.jpg"
+                alt="Woman wearing cream hijab stroking a grey horse."
+                class="gallery-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/TUL24003_013.jpg"
+                alt="Two women and a young boy gathered in kitchen"
+                class="gallery-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/TUL24003_020.jpg"
+                alt="Two Israeli soldiers holding guns look across field"
+                class="gallery-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/TUL24003_023.jpg"
+                alt="woman opens glass sliding door"
+                class="gallery-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/TUL24003_038.jpg" alt="" class="gallery-item" />
+              <!-- Placeholder for future alt text -->
+            </div>
+            <div class="swiper-slide">
+              <img src="images/TUL24003_043.jpg" alt="" class="gallery-item" />
+              <!-- Placeholder for future alt text -->
+            </div>
+            <div class="swiper-slide">
+              <img src="images/TUL24003_061.jpg" alt="" class="gallery-item" />
+              <!-- Placeholder for future alt text -->
+            </div>
+            <div class="swiper-slide">
+              <img src="images/TUL24003_069.jpg" alt="" class="gallery-item" />
+              <!-- Placeholder for future alt text -->
+            </div>
+            <div class="swiper-slide">
+              <img src="images/TUL24003_081.jpg" alt="" class="gallery-item" />
+              <!-- Placeholder for future alt text -->
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Captions -->
+        <div
+          id="caption"
+          class="margin-top-small text-copy font-serif caption ui-border-top padding-top-small"
+        ></div>
       </div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+    <!-- Use defer for better performance -->
   </body>
 </html>
