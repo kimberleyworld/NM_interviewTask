@@ -13,13 +13,13 @@
 }
 
 nav {
-  height: 80px !important;
+  height: 4vw !important;
 }
 
 .swiper,
 .caption,
 .heading {
-  width: 60vw; /* Initial value for larger screens */
+  width: 60vw;
   text-align: center;
 }
 
@@ -83,6 +83,9 @@ nav {
   .caption,
   .heading {
     width: 90vw; /* Adjust for smaller screens */
+  }
+  nav {
+    height: 15vw !important;
   }
 }
 
